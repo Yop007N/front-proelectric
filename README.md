@@ -1,70 +1,273 @@
-# Getting Started with Create React App
+# Front Proelectric
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripcion
 
-## Available Scripts
+Aplicacion web frontend para el sistema de control y gestion Proelectric. Interfaz de usuario moderna construida con React para administrar clientes, productos y cotizaciones (presupuestos).
 
-In the project directory, you can run:
+## Stack Tecnologico
 
-### `npm start`
+- **React 18** - Biblioteca de UI
+- **React Router DOM** - Enrutamiento SPA
+- **Bootstrap 5** - Framework CSS para diseño responsive
+- **@react-pdf/renderer** - Generacion de documentos PDF
+- **Create React App** - Configuracion y tooling
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Caracteristicas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Gestion de clientes con formularios validados
+- Catalogo de productos
+- Sistema de cotizaciones
+- Generacion de documentos PDF para presupuestos
+- Interfaz responsive con Bootstrap
+- Navegacion fluida con React Router
 
-### `npm test`
+## Estructura del Proyecto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+src/
+├── components/         # Componentes reutilizables
+│   ├── ClientForm.js
+│   ├── ProductForm.js
+│   └── QuoteForm.js
+├── pages/             # Paginas principales
+│   ├── ClientsPage.js
+│   ├── ProductsPage.js
+│   └── QuotesPage.js
+├── services/          # Servicios de API
+├── App.js            # Componente principal con rutas
+└── index.js          # Punto de entrada
+```
 
-### `npm run build`
+## Requisitos Previos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js 16+
+- npm o yarn
+- Backend de Proelectris corriendo (para funcionalidad completa)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalacion
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/Yop007N/front-proelectric.git
+cd front-proelectric
+```
 
-### `npm run eject`
+2. Instalar dependencias:
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Configurar API endpoint (si es necesario):
+Editar `src/services/` para apuntar al backend correcto.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Uso
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Modo Desarrollo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+La aplicacion se abrira en [http://localhost:3000](http://localhost:3000).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Hot reload habilitado
+- Errores de lint visibles en consola
+- Recarga automatica al guardar cambios
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Build de Produccion
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Genera una build optimizada en la carpeta `build/`:
+- Minificacion de codigo
+- Optimizacion de assets
+- Hashes en nombres de archivos para cache
+- Bundle listo para despliegue
 
-### Analyzing the Bundle Size
+### Tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm test
+```
 
-### Making a Progressive Web App
+Ejecuta tests en modo interactivo con Jest.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Funcionalidades Principales
 
-### Advanced Configuration
+### Gestion de Clientes
+- Crear, editar y listar clientes
+- Formularios validados
+- Informacion de contacto completa
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Gestion de Productos
+- Catalogo de productos
+- Codigo, descripcion y precios
+- Formularios de alta/edicion
 
-### Deployment
+### Sistema de Cotizaciones
+- Crear presupuestos para clientes
+- Seleccion de productos
+- Generacion de PDF con @react-pdf/renderer
+- Calculo automatico de totales
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Tecnologias Destacadas
 
-### `npm run build` fails to minify
+### Bootstrap 5
+Diseño responsive y componentes pre-estilizados:
+- Grids responsivos
+- Formularios estilizados
+- Componentes modales
+- Sistema de navegacion
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### React Router DOM
+Navegacion SPA sin recargas:
+- Rutas definidas en App.js
+- Navegacion programatica
+- Lazy loading (si configurado)
+
+### React PDF
+Generacion de documentos profesionales:
+- PDFs client-side
+- Estilos personalizables
+- Descarga directa en navegador
+
+## Scripts Disponibles
+
+| Comando | Descripcion |
+|---------|-------------|
+| `npm start` | Inicia servidor de desarrollo |
+| `npm test` | Ejecuta suite de tests |
+| `npm run build` | Build optimizado para produccion |
+| `npm run eject` | Expone configuracion (no reversible) |
+
+## Despliegue
+
+### Opciones de Hosting
+
+**Vercel** (Recomendado):
+```bash
+npm install -g vercel
+vercel
+```
+
+**Netlify**:
+```bash
+npm run build
+# Subir carpeta build/ a Netlify
+```
+
+**GitHub Pages**:
+```bash
+npm install --save-dev gh-pages
+# Agregar a package.json: "homepage": "https://usuario.github.io/repo"
+npm run deploy
+```
+
+**Hosting tradicional**:
+- Compilar con `npm run build`
+- Subir contenido de `build/` a servidor web
+- Configurar servidor para SPA (todas las rutas → index.html)
+
+## Configuracion del Servidor
+
+Para SPA con React Router, configurar servidor para redirigir todas las rutas a index.html:
+
+**Nginx**:
+```nginx
+location / {
+  try_files $uri /index.html;
+}
+```
+
+**Apache** (.htaccess):
+```apache
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [QSA,L]
+```
+
+## Variables de Entorno
+
+Crear archivo `.env` para configuracion:
+```env
+REACT_APP_API_URL=http://localhost:3000
+REACT_APP_ENV=development
+```
+
+Acceder en codigo:
+```javascript
+const apiUrl = process.env.REACT_APP_API_URL;
+```
+
+## Desarrollo
+
+### Agregar Nuevo Componente
+```bash
+# Crear archivo en src/components/
+touch src/components/NuevoComponente.js
+```
+
+### Agregar Nueva Pagina
+```bash
+# Crear archivo en src/pages/
+touch src/pages/NuevaPagina.js
+
+# Agregar ruta en App.js
+```
+
+### Estilos
+- Estilos globales: `src/index.css` y `src/App.css`
+- Estilos de componente: CSS modules o styled-components
+- Bootstrap: Ya incluido globalmente
+
+## Integracion con Backend
+
+Asegurar que el backend Proelectris este corriendo y configurar CORS apropiadamente:
+
+Backend debe permitir:
+```javascript
+app.use(cors({
+  origin: 'http://localhost:3000' // URL del frontend
+}));
+```
+
+## Troubleshooting
+
+**Error de CORS**:
+- Verificar configuracion CORS en backend
+- Asegurar que API URL sea correcta
+
+**Build falla**:
+- Limpiar cache: `rm -rf node_modules package-lock.json`
+- Reinstalar: `npm install`
+
+**Puerto ya en uso**:
+- Cambiar puerto: `PORT=3001 npm start`
+
+## Recursos
+
+- [Documentacion React](https://react.dev)
+- [Create React App](https://create-react-app.dev)
+- [Bootstrap 5](https://getbootstrap.com)
+- [React Router](https://reactrouter.com)
+- [React PDF](https://react-pdf.org)
+
+## Contribuciones
+
+Las contribuciones son bienvenidas:
+
+1. Fork el proyecto
+2. Crear rama feature (`git checkout -b feature/NuevaCaracteristica`)
+3. Commit cambios (`git commit -m 'Agregar caracteristica'`)
+4. Push a rama (`git push origin feature/NuevaCaracteristica`)
+5. Abrir Pull Request
+
+## Licencia
+
+MIT License - ver archivo LICENSE para detalles
+
+## Soporte
+
+Para problemas o preguntas, abrir un issue en GitHub.
