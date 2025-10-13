@@ -1,16 +1,31 @@
-# Front Proelectric
+# ProElectric Frontend
 
-## Descripcion
+![React](https://img.shields.io/badge/React-18.2-61DAFB?logo=react&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-6.14-CA4245?logo=react-router&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-Aplicacion web frontend para el sistema de control y gestion Proelectric. Interfaz de usuario moderna construida con React para administrar clientes, productos y cotizaciones (presupuestos).
+Aplicación web frontend moderna para el sistema de control y gestión ProElectric. Interfaz de usuario responsive construida con React que proporciona herramientas completas para administrar clientes, productos y generar cotizaciones profesionales en PDF.
 
-## Stack Tecnologico
+## Descripción
 
-- **React 18** - Biblioteca de UI
-- **React Router DOM** - Enrutamiento SPA
-- **Bootstrap 5** - Framework CSS para diseño responsive
-- **@react-pdf/renderer** - Generacion de documentos PDF
-- **Create React App** - Configuracion y tooling
+Frontend empresarial desarrollado con React 18 que implementa una Single Page Application (SPA) para la gestión comercial de ProElectric. La aplicación ofrece una interfaz intuitiva y responsive para el manejo de clientes, catálogo de productos y sistema de cotizaciones con generación automática de documentos PDF profesionales.
+
+El sistema está diseñado con componentes reutilizables, navegación fluida y formularios validados, proporcionando una experiencia de usuario moderna y eficiente para operaciones comerciales diarias.
+
+## Stack Tecnológico
+
+### Frontend
+- **React 18.2** - Biblioteca de UI con hooks modernos
+- **React Router DOM 6.14** - Enrutamiento declarativo para SPA
+- **Bootstrap 5.3** - Framework CSS responsive
+- **@react-pdf/renderer 3.1** - Generación de documentos PDF
+- **Create React App 5.0** - Tooling y configuración
+
+### Testing
+- **Jest** - Framework de testing
+- **React Testing Library** - Testing de componentes
+- **Web Vitals** - Métricas de rendimiento
 
 ## Caracteristicas
 
@@ -268,6 +283,19 @@ Las contribuciones son bienvenidas:
 
 MIT License - ver archivo LICENSE para detalles
 
+## Autor
+
+**Enrique Junior Bobadilla Ruiz Díaz**
+Full Stack Developer - Backend Specialist
+
+- LinkedIn: [enriquejbrdyop007n](https://www.linkedin.com/in/enriquejbrdyop007n)
+- Email: enribobadill96@gmail.com
+- Ubicación: Ciudad del Este, Paraguay
+
 ## Soporte
 
 Para problemas o preguntas, abrir un issue en GitHub.
+
+---
+
+Desarrollado con React, Bootstrap y React PDF para sistemas de gestión comercial.
